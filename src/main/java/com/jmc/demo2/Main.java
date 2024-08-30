@@ -46,6 +46,7 @@ public class Main extends Application {
         button.setOnAction(e -> {
             if(!textField.textProperty().get().isEmpty()){
                 list.add(textField.textProperty().get());
+                textField.clear();
             }
         });
 
